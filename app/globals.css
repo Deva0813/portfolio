@@ -2,3 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 65px;
+}   
+
+
+body{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
