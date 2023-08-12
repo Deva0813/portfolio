@@ -27,7 +27,7 @@ export const HomeSection = (props: Props) => {
                             <span className="text-[60px] text-black/25 font-bold ">#GRAPH </span>
                             <span className="text-[30px] text-black/30 font-bold ">#ETHICAL HACK </span>
                             <span className="text-[50px] text-black/40 font-bold ">#GAMER </span>
-                            <Image className="absolute top-0 right-5" src={heroPic} alt="heroPic" height={250} />
+                            <Image className="absolute top-0 right-0" src={heroPic} alt="heroPic" height={250} />
                         </div>
 
 						<div className=" text-lg lg:text-[35px] 2xl:text-[40px]  font-bold py-2 ">
@@ -101,8 +101,8 @@ export const HomeSection = (props: Props) => {
 						</div>
 					</div>
 				</div>
-				<div className="rightDiv w-full md:flex items-center justify-center hidden scale-90 2xl:scale-100 ">
-					<Image src={heroPic} alt="heroPic" />
+				<div className="rightDiv w-full md:flex items-center justify-center hidden ">
+					<Image src={heroPic} className="w-[35%]" alt="heroPic" />
 				</div>
 			</div>
 

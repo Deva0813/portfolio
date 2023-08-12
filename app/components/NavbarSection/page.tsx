@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
-import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
+import { motion } from "framer-motion";
 
 type Props = {};
 export const NavbarSection = (props: Props) => {
@@ -12,7 +12,7 @@ export const NavbarSection = (props: Props) => {
 	return (
 		<div className="sticky top-0 bg-white/80 backdrop-blur-sm z-40 ">
 			{/* Desktop & Tablet Navbar */}
-			<div className=" max-sm:hidden container px-5 mx-auto min-h-[65px] flex flex-row justify-between items-center ">
+			<div className=" max-lg:hidden container px-5 mx-auto min-h-[65px] flex flex-row justify-between items-center ">
 				<div className="title">
 					<h1 className="text-2xl font-bold text-slate-900">deva.</h1>
 				</div>
@@ -82,7 +82,7 @@ export const NavbarSection = (props: Props) => {
 								],
 						  }
 				}
-				className=" sticky max-sm:block hidden bg-white/80 backdrop-blur-sm  overflow-y-hidden"
+				className=" sticky max-lg:block hidden bg-white/80 backdrop-blur-sm  overflow-y-hidden"
 			>
 				<div className="flex flex-row justify-between items-center p-5 h-[8svh] ">
 					<div className="title">
@@ -119,7 +119,7 @@ export const NavbarSection = (props: Props) => {
 					</div>
 				</div>
 				<motion.div
-                    initial={{ opacity: 0 }}
+					initial={{ opacity: 0 }}
 					animate={isOpen ? { opacity: 1 } : { opacity: 0 }}
 					className="list flex flex-col gap-5 p-10 text-3xl items-start justify-center text-[#787878] font-semibold h-[92svh] "
 				>
@@ -161,7 +161,7 @@ export const NavbarSection = (props: Props) => {
 					</Link>
 				</motion.div>
 				<motion.div
-                    initial={{ opacity: 0 }}
+					initial={{ opacity: 0 }}
 					animate={isOpen ? { opacity: 1 } : { opacity: 0 }}
 					className="absolute bottom-10 text-[12px] text-center w-full text-[#787878]"
 				>
