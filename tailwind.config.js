@@ -8,7 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      
+      screens: {
+        '2xl': '1440px',
+      },
     },
   },
   plugins: ['prettier-plugin-tailwindcss'],
