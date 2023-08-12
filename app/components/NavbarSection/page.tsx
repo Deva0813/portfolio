@@ -10,7 +10,7 @@ export const NavbarSection = (props: Props) => {
 	const toggle = () => setIsOpen(!isOpen);
 
 	return (
-		<div className="sticky top-0 bg-white/80 backdrop-blur-sm  ">
+		<div className="sticky top-0 bg-white/80 backdrop-blur-sm z-40 ">
 			{/* Desktop & Tablet Navbar */}
 			<div className=" max-sm:hidden container px-5 mx-auto min-h-[65px] flex flex-row justify-between items-center ">
 				<div className="title">
@@ -155,7 +155,7 @@ export const NavbarSection = (props: Props) => {
 					</Link>
 					<Link
 						href={"#ContactSection"}
-						className=" hover:text-black/70 hover:scale-105"
+						className=" hover:text-white hover:scale-105"
 					>
 						Contact
 					</Link>
