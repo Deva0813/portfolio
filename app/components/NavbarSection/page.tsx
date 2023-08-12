@@ -121,7 +121,7 @@ export const NavbarSection = (props: Props) => {
 				<motion.div
                     initial={{ opacity: 0 }}
 					animate={isOpen ? { opacity: 1 } : { opacity: 0 }}
-					className="list flex flex-col gap-5 p-10 text-2xl items-start justify-start text-[#787878] font-semibold h-[92svh] "
+					className="list flex flex-col gap-5 p-10 text-3xl items-start justify-center text-[#787878] font-semibold h-[92svh] "
 				>
 					<Link
 						href={"#HomeSection"}
@@ -163,7 +163,7 @@ export const NavbarSection = (props: Props) => {
 				<motion.div
                     initial={{ opacity: 0 }}
 					animate={isOpen ? { opacity: 1 } : { opacity: 0 }}
-					className="absolute bottom-10  text-center w-full text-[#787878]"
+					className="absolute bottom-10 text-[12px] text-center w-full text-[#787878]"
 				>
 					Copyright ©️ 2023 Devanand
 				</motion.div>

@@ -1,4 +1,5 @@
 import { NavbarSection } from './components/NavbarSection/page'
+import { AboutSection } from './sections/AboutSection/page'
 import { HomeSection } from './sections/HomeSection/page'
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <main className='' >
       <NavbarSection />
       <HomeSection />
+      <AboutSection />
     </main>
   )
 }
