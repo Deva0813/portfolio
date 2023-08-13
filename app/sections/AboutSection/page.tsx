@@ -6,7 +6,7 @@ export const AboutSection = (props: Props) => {
 			<div className="container mx-auto flex flex-col 2xl:flex-row md:py-20">
 				<div className="leftDiv flex flex-col w-full px-10 pt-10 md:p-10 2xl:max-w-[650px] items-center justify-center ">
 					<div className= " text-3xl md:text-5xl md:py-5 w-full font-bold text-[#787878]">
-						#ABOUT ME
+						ABOUT ME
 					</div>
 					<div className=" py-5 font-normal text-white">
 						<p className="text-justify leading-loose text-xs md:text-[16px] font-light ">
@@ -36,38 +36,38 @@ export const AboutSection = (props: Props) => {
 				<div className="rightDiv w-full flex flex-col md:flex-row ">
 					<div className="w-full px-10 pt-5 md:p-10 ">
 						<div className="text-3xl  md:text-5xl md:py-5 w-full font-bold text-[#787878]">
-							#PROFILE
+							PROFILE
 						</div>
-						<div className="py-5 border-b-2 border-[#A7A7A7] text-sm  md:leading-[inherit] md:text-[16px] ">
+						<div className="py-5 border-b-2 border-[#A7A7A7] text-sm  md:leading-[inherit] md:text-[16px] uppercase ">
 							<table className="text-[#A7A7A7] ">
 								<tbody>
 									<tr>
 										<td className=" font-medium">Name</td>
-										<td className="px-3">:</td>
+										<td className="px-2">:</td>
 										<td className=" font-light">
 											Devanand
 										</td>
 									</tr>
 									<tr>
 										<td className="font-medium">Age</td>
-										<td className="px-3">:</td>
+										<td className="px-2">:</td>
 										<td className=" font-light">22</td>
 									</tr>
 									<tr>
 										<td className="font-medium">Gender</td>
-										<td className="px-3">:</td>
+										<td className="px-2">:</td>
 										<td className="font-light">Male</td>
 									</tr>
 									<tr>
 										<td className="font-medium">Qualif.</td>
-										<td className="px-3">:</td>
+										<td className="px-2">:</td>
 										<td className="font-light">B.E. CSE</td>
 									</tr>
 									<tr>
 										<td className="font-medium">
 											Location
 										</td>
-										<td className="px-3">:</td>
+										<td className="px-2">:</td>
 										<td className="font-light">
 											Chennai, T.N.
 										</td>
@@ -76,20 +76,20 @@ export const AboutSection = (props: Props) => {
 										<td className="font-medium">
 											Nationality
 										</td>
-										<td className="px-3">:</td>
+										<td className="px-2">:</td>
 										<td className="font-light">Indian</td>
 									</tr>
 									<tr>
 										<td className="font-medium">Ph.No.</td>
-										<td className="px-3">:</td>
+										<td className="px-2">:</td>
 										<td className="font-light">
 											+91 9176204928
 										</td>
 									</tr>
 									<tr>
 										<td className="font-medium">Email</td>
-										<td className="px-3">:</td>
-										<td className="font-light">
+										<td className="px-2">:</td>
+										<td className="font-light lowercase ">
 											devanand151101@gmail.com
 										</td>
 									</tr>
@@ -130,12 +130,12 @@ export const AboutSection = (props: Props) => {
 					</div>
 					<div className="w-full px-10 pt-5 md:p-10 ">
 						<div className="text-3xl  md:text-5xl md:py-5 w-full font-bold text-[#787878]">
-							#SKILLS
+							SKILLS
 						</div>
 						<div className="w-full flex flex-col gap-7 pb-10 scale-90 lg:scale-100 ">
 							<div className="w-full text-[#A5A5A5] ">
 								<div className="flex items-center justify-between p-2 ">
-									<div className="">Web Designing</div>
+									<div className="">Graphics Designing</div>
 									<div className="">95%</div>
 								</div>
                                 <div className="w-full h-2 bg-white rounded-full">

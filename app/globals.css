@@ -19,3 +19,6 @@ body{
     display: none;
 }
 
+.timeLineShadow{
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+}
