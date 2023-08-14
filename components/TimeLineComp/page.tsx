@@ -7,7 +7,7 @@ type Props = {
 	year?: string;
 	name?: string;
 	location?: string;
-	image?: string;
+	image: string;
 	title?: string;
 	detail_1?: string;
 	detail_2?: string;
@@ -62,7 +62,7 @@ export const TimelineCard = (props: Props) => {
 					<div className="w-[450px] bg-white drop-shadow-lg p-7 flex flex-row rounded-xl ">
 						<div className=" w-32 flex items-center justify-center ">
 							<Image
-								src={props.image || "/images/placeholder.png"}
+								src={props.image}
 								alt="pic"
 								width={100}
 								height={100}

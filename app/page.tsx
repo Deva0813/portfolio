@@ -1,8 +1,7 @@
-"use client"
-import { NavbarSection } from './components/NavbarSection/page'
-import { AboutSection } from './sections/AboutSection/page'
-import { HomeSection } from './sections/HomeSection/page'
-import { TimelineSection } from './sections/TimelineSection/page'
+import { NavbarSection } from '../components/NavbarSection/page'
+import { AboutSection } from '../components/AboutSection/page'
+import { HomeSection } from '../components/HomeSection/page'
+import { TimelineSection } from '../components/TimelineSection/page'
 
 export default function Home() {
 

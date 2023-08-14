@@ -1,26 +1,12 @@
 import * as React from "react";
-import timelineData from "../../../assets/data/timelineList.json";
 import {
 	TimelineCard,
 	TimelineCardMobile,
 } from "../../components/TimeLineComp/page";
 
+import timelineData from "../../assets/data/timeline";
+
 type Props = {};
-
-interface TimelineData {
-	id: string;
-	year: string;
-	name: string;
-	location: string;
-	image: string;
-	title: string;
-	detail_1: string;
-	detail_2: string;
-}
-
-const timelineDataString: string = JSON.stringify(timelineData);
-
-const timelineDataParsed = JSON.parse(timelineDataString) as TimelineData[];
 
 export const TimelineSection = (props: Props) => {
 	return (
@@ -48,7 +34,7 @@ export const TimelineSection = (props: Props) => {
 						</div>
 					</div>
 					<div className="py-28">
-						{timelineDataParsed.map((data) => {
+						{timelineData.map((data) => {
 							return (
 								<TimelineCardMobile
 									key={data.id}
@@ -63,7 +49,6 @@ export const TimelineSection = (props: Props) => {
 							);
 						})}
 					</div>
-					
 				</div>
 
 				{/* Desktop */}
@@ -75,8 +60,8 @@ export const TimelineSection = (props: Props) => {
 						</div>
 					</div>
 
-					<div className="py-20">
-						{timelineDataParsed.map((data) => {
+					<div className="py-20 pb-36">
+						{timelineData.map((data) => {
 							return (
 								<TimelineCard
 									key={data.id}

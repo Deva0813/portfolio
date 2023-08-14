@@ -2,15 +2,15 @@ import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
 //tech stack images
-import tech1 from "../../../public/homeicons/image 1.png";
-import tech2 from "../../../public/homeicons/image 2.png";
-import tech3 from "../../../public/homeicons/image 3.png";
-import tech4 from "../../../public/homeicons/image 4.png";
-import tech5 from "../../../public/homeicons/image 5.png";
-import tech6 from "../../../public/homeicons/image 6.png";
-import tech7 from "../../../public/homeicons/image 7.png";
+import tech1 from "../../public/homeicons/image 1.png";
+import tech2 from "../../public/homeicons/image 2.png";
+import tech3 from "../../public/homeicons/image 3.png";
+import tech4 from "../../public/homeicons/image 4.png";
+import tech5 from "../../public/homeicons/image 5.png";
+import tech6 from "../../public/homeicons/image 6.png";
+import tech7 from "../../public/homeicons/image 7.png";
 
-import heroPic from "../../../public/homePic.png";
+import heroPic from "../../public/homePic.png";
 
 type Props = {};
 export const HomeSection = (props: Props) => {
@@ -40,13 +40,13 @@ export const HomeSection = (props: Props) => {
 							/>
 						</div>
 
-						<div className=" text-lg lg:text-[35px] 2xl:text-[40px]  font-bold py-2 ">
+						<div className=" text-lg lg:text-[35px] 2xl:text-[40px]  font-bold py-2 lg:py-5 ">
 							Hi there, I&apos;m
 						</div>
-						<div className=" text-5xl lg:text-8xl font-bold text-[#393E46] py-2">
+						<div className=" text-5xl lg:text-8xl font-bold text-[#393E46] py-2 lg:py-5 ">
 							Devanand
 						</div>
-						<div className=" text-lg lg:text-[35px] 2xl:text-[40px] font-bold text-[#606060] py-2 ">
+						<div className=" text-lg lg:text-[35px] 2xl:text-[40px] font-bold text-[#606060] py-2 lg:py-5 ">
 							I&apos;m a{" "}
 							<span className="text-black">
 								Full Stack Developer
