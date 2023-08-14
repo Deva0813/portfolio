@@ -9,6 +9,20 @@ export const NavbarSection = (props: Props) => {
 
 	const toggle = () => setIsOpen(!isOpen);
 
+	//scrolltosection 
+	const scrollToSection = (sectionId: string,type?: string) => {
+		const section = document.getElementById(sectionId);
+		if (type === "desktop" ){
+			section?.scrollIntoView({ behavior: "smooth" });
+		}
+		else{
+			setIsOpen(false);
+		setTimeout(() => {
+			section?.scrollIntoView({ behavior: "smooth" });
+		}, 300);
+	}
+	};
+
 	return (
 		<div className="sticky top-0 bg-white/80 backdrop-blur-sm z-40 ">
 			{/* Desktop & Tablet Navbar */}
@@ -17,42 +31,42 @@ export const NavbarSection = (props: Props) => {
 					<h1 className="text-2xl font-bold text-slate-900">deva.</h1>
 				</div>
 				<div className="list flex flex-row gap-5 items-center text-[#787878] font-semibold">
-					<Link
-						href={"#HomeSection"}
+					<button
+						onClick={() => scrollToSection("HomeSection","desktop")}
 						className=" hover:text-black/70 hover:scale-105"
 					>
 						Home
-					</Link>
-					<Link
-						href={"#AboutSection"}
+					</button>
+					<button
+						onClick={() => scrollToSection("AboutSection","desktop")}
 						className=" hover:text-black/70 hover:scale-105"
 					>
 						About
-					</Link>
-					<Link
-						href={"#TimelineSection"}
+					</button>
+					<button
+						onClick={() => scrollToSection("TimelineSection","desktop")}
 						className=" hover:text-black/70 hover:scale-105"
 					>
 						Timeline
-					</Link>
-					<Link
-						href={"#CertificationSection"}
+					</button>
+					<button
+						onClick={() => scrollToSection("CertificationSection","desktop")}
 						className=" hover:text-black/70 hover:scale-105"
 					>
 						Certification
-					</Link>
-					<Link
-						href={"#ProjectsSection"}
+					</button>
+					<button
+						onClick={() => scrollToSection("ProjectsSection","desktop")}
 						className=" hover:text-black/70 hover:scale-105"
 					>
 						Projects
-					</Link>
-					<Link
-						href={"#ContactSection"}
+					</button>
+					<button
+						onClick={() => scrollToSection("ContactSection","desktop")}
 						className=" hover:text-black/70 hover:scale-105"
 					>
 						Contact
-					</Link>
+					</button>
 					<button className="px-2 py-1 text-white bg-blue-700 ml-5 rounded-md scale-95 hover:scale-100 hover:bg-blue-600 hover:drop-shadow-md ">
 						Download CV
 					</button>
@@ -123,42 +137,42 @@ export const NavbarSection = (props: Props) => {
 					animate={isOpen ? { opacity: 1 } : { opacity: 0 }}
 					className="list flex flex-col gap-5 p-10 text-3xl items-start justify-center text-[#787878] font-semibold h-[92svh] "
 				>
-					<Link
-						href={"#HomeSection"}
+					<button
+						onClick={() => scrollToSection("HomeSection")}
 						className=" hover:text-white hover:scale-105"
 					>
 						Home
-					</Link>
-					<Link
-						href={"#AboutSection"}
+					</button>
+					<button
+						onClick={() => scrollToSection("AboutSection")}
 						className=" hover:text-white hover:scale-105"
 					>
 						About
-					</Link>
-					<Link
-						href={"#TimelineSection"}
+					</button>
+					<button
+						onClick={() => scrollToSection("TimelineSection")}
 						className=" hover:text-white hover:scale-105"
 					>
 						Timeline
-					</Link>
-					<Link
-						href={"#CertificationSection"}
+					</button>
+					<button
+						onClick={() => scrollToSection("CertificationSection")}
 						className=" hover:text-white hover:scale-105"
 					>
 						Certification
-					</Link>
-					<Link
-						href={"#ProjectsSection"}
+					</button>
+					<button
+						onClick={() => scrollToSection("ProjectsSection")}
 						className=" hover:text-white hover:scale-105"
 					>
 						Projects
-					</Link>
-					<Link
-						href={"#ContactSection"}
+					</button>
+					<button
+						onClick={() => scrollToSection("ContactSection")}
 						className=" hover:text-white hover:scale-105"
 					>
 						Contact
-					</Link>
+					</button>
 				</motion.div>
 				<motion.div
 					initial={{ opacity: 0 }}

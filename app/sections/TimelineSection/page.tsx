@@ -43,7 +43,7 @@ export const TimelineSection = (props: Props) => {
 				<div className="relative -z-40 lg:hidden mt-[-15vh] ">
 					<div className="absolute h-full w-2 bg-white left-10 top-0 timeLineShadow ">
 						<div className=" mt-[-50vh] sticky h-[50vh] w-2 bg-gradient-to-b from-[#D9D9D900] from-0% via-[#FF00C7] via-50% to-[#AD00FF] to-100% top-0 "></div>
-						<div className="sticky scale-75 h-8 w-8 bg-white drop-shadow-lg rounded-full top-[49vh] ml-[-11px] mt-[20vh] flex items-center justify-center ">
+						<div className="sticky scale-75 h-8 w-8 bg-white drop-shadow-lg rounded-full top-[49vh] ml-[-11px] mt-[15vh] flex items-center justify-center ">
 							<div className="h-6 w-6 bg-gradient-to-b  from-[#FF00C7] from-20% to-[#AD00FF] to-100% rounded-full "></div>
 						</div>
 					</div>
