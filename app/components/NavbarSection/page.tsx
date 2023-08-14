@@ -1,13 +1,14 @@
 "use client";
-import Link from "next/link";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-type Props = {};
-export const NavbarSection = (props: Props) => {
+export function NavbarSection() {
 	const [isOpen, setIsOpen] = useState(false);
 
-	const toggle = () => setIsOpen(!isOpen);
+	
+	function toggle() {
+		setIsOpen(!isOpen);
+	}
 
 	//scrolltosection 
 	const scrollToSection = (sectionId: string,type?: string) => {
@@ -185,3 +186,4 @@ export const NavbarSection = (props: Props) => {
 		</div>
 	);
 };
+
