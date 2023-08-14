@@ -1,3 +1,4 @@
+"use client"
 import { NavbarSection } from './components/NavbarSection/page'
 import { AboutSection } from './sections/AboutSection/page'
 import { HomeSection } from './sections/HomeSection/page'
