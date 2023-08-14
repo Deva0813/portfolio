@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import * as React from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-motion";
 
 type Props = {
 	year?: string;
@@ -23,6 +23,7 @@ export const TimelineCard = (props: Props) => {
 		offset: ["0 1", "5 1"],
 	});
 
+	//Offset config to values
 	const scaleValue = useTransform(
 		scrollYProgress,
 		[0, 0.45, 0.55, 1],
@@ -35,9 +36,10 @@ export const TimelineCard = (props: Props) => {
 	);
 	const filter = useTransform(
 		scrollYProgress,
-		[0, 0.45, 0.55, 1],
+		[0, 0.4, 0.6, 1],
 		["blur(10px)", "blur(0px)", "blur(0px)", "blur(10px)"],
 	);
+
 	return (
 		<motion.div
 			ref={ref}
@@ -50,7 +52,7 @@ export const TimelineCard = (props: Props) => {
 		>
 			<div className=" w-[1000px] flex flex-row gap-20 items-center ">
 				<div className="left w-full text-end ">
-					<div className="text-lg font-semibold ">{props.year}</div>
+					<div className="text-lg font-semibold  ">{props.year}</div>
 					<div className="text-2xl font-bold py-2 ">{props.name}</div>
 					<div className="text-lg font-semibold text-[#787878] ">
 						{props.location}
@@ -86,5 +88,39 @@ export const TimelineCard = (props: Props) => {
 };
 
 export const TimelineCardMobile = (props: Props) => {
-	return <div className=" flex "></div>;
+	return (
+		<div className=" flex ml-[20%] flex-col py-5 ">
+			<div className="pl-2">
+				<div className="text-xs font-semibold ">{props.year}</div>
+				<div className="text-sm font-bold ">{props.name}</div>
+				<div className="text-xs font-semibold text-[#787878] ">
+					{props.location}
+				</div>
+			</div>
+			<div className="w-full flex mt-3 ">
+				<div className="w-[280px] bg-white drop-shadow-lg p-3 flex flex-row rounded-lg ">
+					<div className=" flex items-start pt-2 justify-center w-56 ">
+						<Image
+							src={props.image || "/images/placeholder.png"}
+							alt="pic"
+							width={50}
+							height={50}
+							className=""
+						/>
+					</div>
+					<div className="pl-3">
+						<div className=" text-xs font-medium w-[180px] ">
+							{props.title}
+						</div>
+						<div className="text-[#787878] text-[10px] py-1 ">
+							{props.detail_1}
+						</div>
+						<div className="text-[#606060] text-[10px] ">
+							{props.detail_2}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
 };

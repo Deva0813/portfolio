@@ -1,19 +1,11 @@
 import * as React from "react";
 import timelineData from "../../../assets/data/timelineList.json";
-import { TimelineCard } from "../../components/TimeLineComp/page";
+import {
+	TimelineCard,
+	TimelineCardMobile,
+} from "../../components/TimeLineComp/page";
 
 type Props = {};
-
-// {
-//     id: '4',
-//     year: '2022 - 2023',
-//     name: 'FULL STACK DEVELOPER INTERN',
-//     location: 'CHENNAI',
-//     image: '/../public/timeline/4.png',
-//     title: 'Virtusa Consulting Services Pvt Ltd, Chennai - 125',
-//     detail_1: 'Digital Engineer Intern',
-//     detail_2: '3 Months Experience'
-//   }
 
 interface TimelineData {
 	id: string;
@@ -48,21 +40,37 @@ export const TimelineSection = (props: Props) => {
 			</div>
 			<div>
 				{/* Mobile */}
-				<div className="relative h-screen -z-40 lg:hidden mt-[-15vh] ">
-					<div className="absolute h-full w-2 bg-white left-14 top-0 timeLineShadow ">
+				<div className="relative -z-40 lg:hidden mt-[-15vh] ">
+					<div className="absolute h-full w-2 bg-white left-10 top-0 timeLineShadow ">
 						<div className=" mt-[-50vh] sticky h-[50vh] w-2 bg-gradient-to-b from-[#D9D9D900] from-0% via-[#FF00C7] via-50% to-[#AD00FF] to-100% top-0 "></div>
-						<div className="sticky scale-75 h-8 w-8 bg-white drop-shadow-lg rounded-full top-[49vh] ml-[-11px] mt-[15vh] flex items-center justify-center ">
+						<div className="sticky scale-75 h-8 w-8 bg-white drop-shadow-lg rounded-full top-[49vh] ml-[-11px] mt-[20vh] flex items-center justify-center ">
 							<div className="h-6 w-6 bg-gradient-to-b  from-[#FF00C7] from-20% to-[#AD00FF] to-100% rounded-full "></div>
 						</div>
 					</div>
+					<div className="py-28">
+						{timelineDataParsed.map((data) => {
+							return (
+								<TimelineCardMobile
+									key={data.id}
+									year={data.year}
+									name={data.name}
+									location={data.location}
+									image={data.image}
+									title={data.title}
+									detail_1={data.detail_1}
+									detail_2={data.detail_2}
+								/>
+							);
+						})}
+					</div>
+					
 				</div>
 
 				{/* Desktop */}
 				<div className="relative -z-40 max-lg:hidden mt-[-15vh] ">
-
 					<div className="absolute h-full w-2 bg-white left-[49.75%] top-0 timeLineShadow">
 						<div className=" mt-[-50vh] sticky h-[50vh] w-2 bg-gradient-to-b from-[#D9D9D900] from-0% via-[#FF00C7] via-50% to-[#AD00FF] to-100% top-0 "></div>
-						<div className="sticky scale-90 h-8 w-8 bg-white drop-shadow-lg rounded-full top-[49vh] ml-[-11px] mt-[19vh] flex items-center justify-center ">
+						<div className="sticky scale-75 h-8 w-8 bg-white drop-shadow-lg rounded-full top-[49vh] ml-[-11px] mt-[19vh] flex items-center justify-center ">
 							<div className="h-6 w-6 bg-gradient-to-b  from-[#FF00C7] from-20% to-[#AD00FF] to-100% rounded-full "></div>
 						</div>
 					</div>

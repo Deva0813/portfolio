@@ -11,6 +11,7 @@ export default function Home() {
       <HomeSection />
       <AboutSection />
       <TimelineSection />
+      <div className="h-screen">hello</div>
     </main>
   )
 }
