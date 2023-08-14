@@ -2,41 +2,51 @@ import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
 //tech stack images
-import tech1 from "../../../public/homeicons/image 1.png";
-import tech2 from "../../../public/homeicons/image 2.png";
-import tech3 from "../../../public/homeicons/image 3.png";
-import tech4 from "../../../public/homeicons/image 4.png";
-import tech5 from "../../../public/homeicons/image 5.png";
-import tech6 from "../../../public/homeicons/image 6.png";
-import tech7 from "../../../public/homeicons/image 7.png";
+import tech1 from "../../public/homeicons/image 1.png";
+import tech2 from "../../public/homeicons/image 2.png";
+import tech3 from "../../public/homeicons/image 3.png";
+import tech4 from "../../public/homeicons/image 4.png";
+import tech5 from "../../public/homeicons/image 5.png";
+import tech6 from "../../public/homeicons/image 6.png";
+import tech7 from "../../public/homeicons/image 7.png";
 
-import heroPic from "../../../public/homePic.png";
+import heroPic from "../../public/homePic.png";
 
 type Props = {};
 export const HomeSection = (props: Props) => {
 	return (
 		<section id="HomeSection" className="relative overflow-hidden ">
 			<div className="container mx-auto  lg:h-[94vh] flex flex-col md:flex-row ">
-
-
 				<div className="leftDiv w-full flex items-center  justify-center flex-col">
-					<div className=" p-10 lg:p-5 max-w-[39rem] md:scale-[.75] 2xl:scale-90 ">
-                        
-                        <div className= "relative h-[250px] md:hidden overflow-hidden leading-snug mb-5">
-                            <span className="text-[40px] text-black/30 font-bold ">#FULL STACK </span>
-                            <span className="text-[60px] text-black/25 font-bold ">#GRAPH </span>
-                            <span className="text-[30px] text-black/30 font-bold ">#ETHICAL HACK </span>
-                            <span className="text-[50px] text-black/40 font-bold ">#GAMER </span>
-                            <Image className="absolute top-0 right-5" src={heroPic} alt="heroPic" height={250} />
-                        </div>
+					<div className=" p-10 lg:p-5 max-w-[39rem] md:scale-[.75] 2xl:scale-80 ">
+						<div className="relative h-[250px] md:hidden overflow-hidden leading-snug mb-5">
+							<span className="text-[40px] text-black/30 font-bold ">
+								#FULL STACK{" "}
+							</span>
+							<span className="text-[60px] text-black/25 font-bold ">
+								#GRAPH{" "}
+							</span>
+							<span className="text-[30px] text-black/30 font-bold ">
+								#ETHICAL HACK{" "}
+							</span>
+							<span className="text-[50px] text-black/40 font-bold ">
+								#GAMER{" "}
+							</span>
+							<Image
+								className="absolute top-0 right-0"
+								src={heroPic}
+								alt="heroPic"
+								height={250}
+							/>
+						</div>
 
-						<div className=" text-lg lg:text-[35px] 2xl:text-[40px]  font-bold py-2 ">
+						<div className=" text-lg lg:text-[35px] 2xl:text-[40px]  font-bold py-2 lg:py-5 ">
 							Hi there, I&apos;m
 						</div>
-						<div className=" text-5xl lg:text-8xl font-bold text-[#393E46] py-2">
+						<div className=" text-5xl lg:text-8xl font-bold text-[#393E46] py-2 lg:py-5 ">
 							Devanand
 						</div>
-						<div className=" text-lg lg:text-[35px] 2xl:text-[40px] font-bold text-[#606060] py-2 ">
+						<div className=" text-lg lg:text-[35px] 2xl:text-[40px] font-bold text-[#606060] py-2 lg:py-5 ">
 							I&apos;m a{" "}
 							<span className="text-black">
 								Full Stack Developer
@@ -66,7 +76,7 @@ export const HomeSection = (props: Props) => {
 							<Image
 								src={tech1}
 								alt="tech1"
-								className= " md:w-10 md:h-10"
+								className=" md:w-10 md:h-10"
 							/>
 							<Image
 								src={tech2}
@@ -101,8 +111,8 @@ export const HomeSection = (props: Props) => {
 						</div>
 					</div>
 				</div>
-				<div className="rightDiv w-full md:flex items-center justify-center hidden scale-90 2xl:scale-100 ">
-					<Image src={heroPic} alt="heroPic" />
+				<div className="rightDiv w-full md:flex items-center justify-center hidden ">
+					<Image src={heroPic} className="w-[40%]" alt="heroPic" />
 				</div>
 			</div>
 
