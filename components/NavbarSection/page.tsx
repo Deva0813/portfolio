@@ -69,7 +69,7 @@ export function NavbarSection() {
 						Contact
 					</button>
 					<button className="px-2 py-1 text-white bg-blue-700 ml-5 rounded-md scale-95 hover:scale-100 hover:bg-blue-600 hover:drop-shadow-md ">
-						Download CV
+						Resume
 					</button>
 				</div>
 			</div>

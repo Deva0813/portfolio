@@ -56,7 +56,7 @@ export const HomeSection = (props: Props) => {
 							Welcome to My Portfolio: Where Creativity Comes to
 							Life!
 						</div>
-						<div className="text-[#646464] text-[12px] md:text-[16px] font-semibold py-2  ">
+						<div className="text-[#646464] text-xs md:text-base font-semibold py-2  ">
 							Step into the dynamic world of web development as I
 							showcase my portfolio of innovative projects. From
 							front-end finesse to back-end brilliance, each
