@@ -3,7 +3,7 @@ type Props = {};
 export const AboutSection = (props: Props) => {
 	return (
 		<section id="AboutSection" className=" bg-[#272829]">
-			<div className="container mx-auto flex flex-col 2xl:flex-row md:py-20">
+			<div className="container mx-auto flex flex-col 2xl:flex-row md:py-20 lapScreen ">
 				<div className="leftDiv flex flex-col w-full px-10 pt-10 md:p-10 2xl:max-w-[650px] items-center justify-center ">
 					<div className= " text-3xl md:text-5xl md:py-5 w-full font-bold text-[#787878]">
 						ABOUT ME

@@ -16,9 +16,9 @@ type Props = {};
 export const HomeSection = (props: Props) => {
 	return (
 		<section id="HomeSection" className="relative overflow-hidden ">
-			<div className="container mx-auto  lg:h-[94vh] flex flex-col md:flex-row ">
+			<div className="container mx-auto  lg:h-[94vh] flex flex-col md:flex-row lapScreen ">
 				<div className="leftDiv w-full flex items-center  justify-center flex-col">
-					<div className=" p-10 lg:p-5 max-w-[39rem] md:scale-[.75] 2xl:scale-80 ">
+					<div className=" p-10 lg:p-5 max-w-[39rem] md:scale-[.75] 2xl:scale-[.85] ">
 						<div className="relative h-[250px] md:hidden overflow-hidden leading-snug mb-5">
 							<span className="text-[40px] text-black/30 font-bold ">
 								#FULL STACK{" "}
