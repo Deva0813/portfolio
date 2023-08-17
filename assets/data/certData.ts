@@ -1,11 +1,11 @@
 //image imports
-import cert_1 from "../../public/Certification/cert_1.png";
-import cert_2 from "../../public/Certification/cert_2.png";
-import cert_3 from "../../public/Certification/cert_3.png";
-import cert_4 from "../../public/Certification/cert_4.png";
-import cert_5 from "../../public/Certification/cert_5.png";
-import cert_6 from "../../public/Certification/cert_6.png";
-import cert_7 from "../../public/Certification/cert_7.png";
+import cert_1 from "../../public/images/Certification/cert_1.png";
+import cert_2 from "../../public/images/Certification/cert_2.png";
+import cert_3 from "../../public/images/Certification/cert_3.png";
+import cert_4 from "../../public/images/Certification/cert_4.png";
+import cert_5 from "../../public/images/Certification/cert_5.png";
+import cert_6 from "../../public/images/Certification/cert_6.png";
+import cert_7 from "../../public/images/Certification/cert_7.png";
 
 
 interface CertifiateData {

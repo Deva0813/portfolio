@@ -3,6 +3,7 @@ import { AboutSection } from '../components/AboutSection/page'
 import { HomeSection } from '../components/HomeSection/page'
 import { TimelineSection } from '../components/TimelineSection/page'
 import { CertificationSection } from '../components/CertificationSection/page'
+import { ProjectSection } from '../components/ProjectSection/page'
 
 export default function Home() {
 
@@ -13,6 +14,7 @@ export default function Home() {
       <AboutSection />
       <TimelineSection />
       <CertificationSection />
+      <ProjectSection />
     </main>
   )
 }

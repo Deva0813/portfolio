@@ -1,6 +1,6 @@
 "use client";
 import {useState} from "react";
-import { CertificateCard, CertificateCardBig } from "../CertificateComp/page";
+import { CertificateCard, CertificateCardBig, CertificateCardMobile } from "../CertificateComp/page";
 
 //certification data
 import certificateData from "../../assets/data/certData";
@@ -23,7 +23,7 @@ export const CertificationSection = (props: Props) => {
 	const data = certificateData;
 
 	return (
-		<section id="CertificationSection" className="bg-[#272829] relative min-h-[800px] " >
+		<section id="CertificationSection" className="bg-[#272829] relative min-h-[94vh] " >
 			<div className="container p-10 md:p-10 mx-auto lapScreen " >
 				<div className=" text-3xl md:text-5xl md:py-5 md:pt-10 w-full font-semibold md:font-bold text-white">
 					CERTIFICATIONS
@@ -38,7 +38,7 @@ export const CertificationSection = (props: Props) => {
 					</p>
 				</div>
 
-				<div className="py-10 grid place-content-center  w-full ">
+				<div className="md:py-10 grid place-content-center  w-full ">
                     <div className=" grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-10 w-fit max-md:hidden ">
                     {
 						data.map((item, index) => {
@@ -57,11 +57,11 @@ export const CertificationSection = (props: Props) => {
 					}
 					<CertificateCardBig image={data[selectedCard].image} title={data[selectedCard].title } tech={data[selectedCard].tech} hidden={show} onClick={()=>{handleClose()}} link={data[selectedCard].link} />
                     </div>
-					<div className=" grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-10 w-fit md:hidden " >
+					<div className=" grid grid-cols-2  gap-7 scale-95 w-fit md:hidden " >
                     {
 						data.map((item, index) => {
 							return (
-								<CertificateCard
+								<CertificateCardMobile
 									key={index}
 									image={item.image}
 									title={item.title}
