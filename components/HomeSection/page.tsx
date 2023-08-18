@@ -1,24 +1,36 @@
+"use client"
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
 //tech stack images
-import tech1 from "../../public/homeicons/image 1.png";
-import tech2 from "../../public/homeicons/image 2.png";
-import tech3 from "../../public/homeicons/image 3.png";
-import tech4 from "../../public/homeicons/image 4.png";
-import tech5 from "../../public/homeicons/image 5.png";
-import tech6 from "../../public/homeicons/image 6.png";
-import tech7 from "../../public/homeicons/image 7.png";
+import tech1 from "../../public/images/homeicons/image 1.png";
+import tech2 from "../../public/images/homeicons/image 2.png";
+import tech3 from "../../public/images/homeicons/image 3.png";
+import tech4 from "../../public/images/homeicons/image 4.png";
+import tech5 from "../../public/images/homeicons/image 5.png";
+import tech6 from "../../public/images/homeicons/image 6.png";
+import tech7 from "../../public/images/homeicons/image 7.png";
 
-import heroPic from "../../public/homePic.png";
+import heroPic from "../../public/images/homePic.png";
 
 type Props = {};
 export const HomeSection = (props: Props) => {
+	const scrollToSection = (sectionId: string, type?: string) => {
+		const section = document.getElementById(sectionId);
+		if (type === "desktop") {
+			section?.scrollIntoView({ behavior: "smooth" });
+		} else {
+			setTimeout(() => {
+				section?.scrollIntoView({ behavior: "smooth" });
+			}, 300);
+		}
+	};
+
 	return (
 		<section id="HomeSection" className="relative overflow-hidden ">
-			<div className="container mx-auto  lg:h-[94vh] flex flex-col md:flex-row ">
+			<div className="container mx-auto  lg:h-[94vh] flex flex-col md:flex-row lapScreen ">
 				<div className="leftDiv w-full flex items-center  justify-center flex-col">
-					<div className=" p-10 lg:p-5 max-w-[39rem] md:scale-[.75] 2xl:scale-80 ">
+					<div className=" p-10 lg:p-5 max-w-[39rem] md:scale-[.75] 2xl:scale-[.85] ">
 						<div className="relative h-[250px] md:hidden overflow-hidden leading-snug mb-5">
 							<span className="text-[40px] text-black/30 font-bold ">
 								#FULL STACK{" "}
@@ -56,7 +68,7 @@ export const HomeSection = (props: Props) => {
 							Welcome to My Portfolio: Where Creativity Comes to
 							Life!
 						</div>
-						<div className="text-[#646464] text-[12px] md:text-[16px] font-semibold py-2  ">
+						<div className="text-[#646464] text-xs md:text-base font-semibold py-2  ">
 							Step into the dynamic world of web development as I
 							showcase my portfolio of innovative projects. From
 							front-end finesse to back-end brilliance, each
@@ -65,7 +77,12 @@ export const HomeSection = (props: Props) => {
 							&quot;Contact Me&quot; button below.
 						</div>
 						<div className="text-white">
-							<button className="bg-blue-700 hover:bg-blue-600 hover:scale-100 scale-95 px-2 py-1 md:px-4 md:py-2 rounded-lg lg:text-xl font-semibold my-2 md:my-5">
+							<button
+								className="bg-blue-700 hover:bg-blue-600 hover:scale-100 scale-95 px-2 py-1 md:px-4 md:py-2 rounded-lg lg:text-xl font-semibold my-2 md:my-5"
+								onClick={() =>
+									scrollToSection("ContactSection", "desktop")
+								}
+							>
 								Contact Me
 							</button>
 						</div>

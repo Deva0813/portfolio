@@ -12,7 +12,7 @@ export const TimelineSection = (props: Props) => {
 	return (
 		<section id="TimelineSection" className="relative bg-[#EEEEEE] -z-50 ">
 			<div className="mx-auto p-10 lg:p-20 z-10 bg-gradient-to-b from-[#EEE] from-70% to-transparent pb-[15vh] flex lg:text-center lg:justify-center ">
-				<div className="">
+				<div className="lapScreen">
 					<div className="text-3xl lg:text-5xl font-bold ">
 						TIMELINE
 					</div>

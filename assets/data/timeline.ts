@@ -1,8 +1,8 @@
 //image data
-import pic1 from "../../public/timeline/1.png";
-import pic2 from "../../public/timeline/2.png";
-import pic3 from "../../public/timeline/3.png";
-import pic4 from "../../public/timeline/4.png";
+import pic1 from "../../public/images/timeline/1.png";
+import pic2 from "../../public/images/timeline/2.png";
+import pic3 from "../../public/images/timeline/3.png";
+import pic4 from "../../public/images/timeline/4.png";
 
 
 interface TimelineData {

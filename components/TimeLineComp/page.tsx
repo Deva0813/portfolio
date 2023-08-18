@@ -59,7 +59,7 @@ export const TimelineCard = (props: Props) => {
 					</div>
 				</div>
 				<div className="right w-full flex ">
-					<div className="w-[450px] bg-white drop-shadow-lg p-7 flex flex-row rounded-xl ">
+					<div className="w-[450px] bg-white drop-shadow-xl p-7 flex flex-row rounded-xl ">
 						<div className=" w-32 flex items-center justify-center ">
 							<Image
 								src={props.image}

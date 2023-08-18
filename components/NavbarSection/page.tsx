@@ -69,7 +69,7 @@ export function NavbarSection() {
 						Contact
 					</button>
 					<button className="px-2 py-1 text-white bg-blue-700 ml-5 rounded-md scale-95 hover:scale-100 hover:bg-blue-600 hover:drop-shadow-md ">
-						Download CV
+						Resume
 					</button>
 				</div>
 			</div>
@@ -116,7 +116,7 @@ export function NavbarSection() {
 					</div>
 					<div className="flex flex-row  gap-4">
 						<button className="px-2 py-1 text-white bg-blue-700 rounded-md scale-90 hover:bg-blue-600 hover:drop-shadow-md ">
-							Download CV
+							Resume
 						</button>
 						<button className="w-8 text-center" onClick={toggle}>
 							<svg

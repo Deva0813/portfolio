@@ -2,6 +2,9 @@ import { NavbarSection } from '../components/NavbarSection/page'
 import { AboutSection } from '../components/AboutSection/page'
 import { HomeSection } from '../components/HomeSection/page'
 import { TimelineSection } from '../components/TimelineSection/page'
+import { CertificationSection } from '../components/CertificationSection/page'
+import { ProjectSection } from '../components/ProjectSection/page'
+import { ContactSection } from '../components/ContactSection/page'
 
 export default function Home() {
 
@@ -11,7 +14,9 @@ export default function Home() {
       <HomeSection />
       <AboutSection />
       <TimelineSection />
-      <div className="h-screen">hello</div>
+      <CertificationSection />
+      <ProjectSection />
+      <ContactSection />
     </main>
   )
 }
