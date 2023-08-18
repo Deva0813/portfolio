@@ -15,9 +15,9 @@ type Props = {
 export const CertificateCard = (props: Props) => {
     return (
         <div className={props.className} >
-        <div className=' w-min' >
-            <div className=" relative w-[300px] h-[200px] " onClick={props.onClick} >
-                <Image src={props.image} alt="Cert_Image" className='rounded-xl cursor-pointer ' fill={true} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+        <div className=' w-min ' >
+            <div className=" relative w-[300px] h-[200px]" onClick={props.onClick} >
+                <Image src={props.image} alt="Cert_Image" className='rounded-xl cursor-pointer hover:border-4 border-white ' fill={true} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
             </div>
             <p className='text-sm text-white font-medium text-center pt-2 ' >{props.title}</p>
         </div>

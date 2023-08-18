@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
@@ -14,6 +15,17 @@ import heroPic from "../../public/images/homePic.png";
 
 type Props = {};
 export const HomeSection = (props: Props) => {
+	const scrollToSection = (sectionId: string, type?: string) => {
+		const section = document.getElementById(sectionId);
+		if (type === "desktop") {
+			section?.scrollIntoView({ behavior: "smooth" });
+		} else {
+			setTimeout(() => {
+				section?.scrollIntoView({ behavior: "smooth" });
+			}, 300);
+		}
+	};
+
 	return (
 		<section id="HomeSection" className="relative overflow-hidden ">
 			<div className="container mx-auto  lg:h-[94vh] flex flex-col md:flex-row lapScreen ">
@@ -65,7 +77,12 @@ export const HomeSection = (props: Props) => {
 							&quot;Contact Me&quot; button below.
 						</div>
 						<div className="text-white">
-							<button className="bg-blue-700 hover:bg-blue-600 hover:scale-100 scale-95 px-2 py-1 md:px-4 md:py-2 rounded-lg lg:text-xl font-semibold my-2 md:my-5">
+							<button
+								className="bg-blue-700 hover:bg-blue-600 hover:scale-100 scale-95 px-2 py-1 md:px-4 md:py-2 rounded-lg lg:text-xl font-semibold my-2 md:my-5"
+								onClick={() =>
+									scrollToSection("ContactSection", "desktop")
+								}
+							>
 								Contact Me
 							</button>
 						</div>

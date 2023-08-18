@@ -29,9 +29,9 @@ export const ProjectSection = (props: Props) => {
                     </div>
                 </div>
                 <div className="md:py-10 grid place-content-center  w-full ">
-                    <div className=" grid md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-3 gap-10 w-fit max-md:hidden ">
+                    <div className=" grid md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-3 grid- gap-10 w-fit max-md:hidden ">
                     {
-                        projectData.map((item, index) => {
+                        projectData.toReversed().map((item, index) => {
 							return(
 								<ProjectComp key={index} image={item.image} title={item.title} link={item.link} />
 							)
@@ -40,7 +40,7 @@ export const ProjectSection = (props: Props) => {
                     </div>
 					<div className=" flex flex-col w-fit md:hidden  " >
                     {
-						projectData.map((item, index) => {
+						projectData.toReversed().map((item, index) => {
 							return(
 								<ProjectComp key={index} className="scale-75 -mt-8 "  image={item.image} title={item.title} link={item.link} />
 							)

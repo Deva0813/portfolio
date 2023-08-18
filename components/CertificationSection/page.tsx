@@ -57,7 +57,7 @@ export const CertificationSection = (props: Props) => {
 					}
 					<CertificateCardBig image={data[selectedCard].image} title={data[selectedCard].title } tech={data[selectedCard].tech} hidden={show} onClick={()=>{handleClose()}} link={data[selectedCard].link} />
                     </div>
-					<div className=" grid grid-cols-2  gap-7 scale-95 w-fit md:hidden " >
+					<div className=" grid grid-cols-2  gap-7 scale-95 w-fit  -ml-1  md:hidden " >
                     {
 						data.map((item, index) => {
 							return (
