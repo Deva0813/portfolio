@@ -64,15 +64,15 @@ export const ContactSection = (props: Props) => {
       };
 
 	return (
-		<section id="ContactSection" className="bg-[#1E1E1E]">
-			<div className="h-[93vh] relative  container mx-auto text-white flex flex-row lapScreen ">
-				<div className="absolute left-[50%] translate-x-[-50%]  bottom-5 font-semibold text-[#6b6b6b] w-max ">
+		<section id="ContactSection" className="bg-[#1E1E1E] overflow-hidden ">
+			<div className="  md:h-[93vh] relative  container mx-auto text-white flex flex-col md:flex-row lapScreen ">
+				<div className="absolute left-[50%] translate-x-[-50%] max-md:text-sm  bottom-5 font-semibold text-[#6b6b6b] w-max ">
 					Copyright ©️ 2023 Devanand
 				</div>
 
 				<div className=" w-full grid place-content-center lg:pt-28  ">
-					<div className="w-[22rem]">
-						<p className="text-2xl text-[#787878] font-semibold">
+					<div className="w-[22rem] max-md:scale-75 ">
+						<p className="text-2xl text-[#787878] font-semibold ">
 							Contact Me
 						</p>
 						<p className="text-5xl font-semibold flex flex-row items-center justify-between ">
@@ -162,10 +162,10 @@ export const ContactSection = (props: Props) => {
 					</div>
 				</div>
 				<div className=" relative w-full grid place-content-center  ">
-					<div className=" absolute -left-[85%]  top-10  getTxt  text-[10rem] w-max font-semibold text-[#414243]   ">
+					<div className=" absolute -left-[85%]  top-10  getTxt  text-[10rem] w-max max-md:hidden font-semibold text-[#414243]   ">
 						#GET IN TOUCH
 					</div>
-					<div className="w-[25rem] bg-[#3A3A3A] rounded-lg text-white/70 p-10 text-sm z-20 ">
+					<div className="w-[25rem] bg-[#3A3A3A] rounded-lg text-white/70 p-10 text-sm z-20 max-md:scale-[.8] max-md:-mt-10 ">
 						<form action="" ref={form!} >
 							<label htmlFor="name" className="">
 								What&apos;s your name ?
