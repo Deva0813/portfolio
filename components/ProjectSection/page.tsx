@@ -40,7 +40,7 @@ export const ProjectSection = (props: Props) => {
                     </div>
 					<div className=" flex flex-col w-fit md:hidden  " >
                     {
-						projectData.reverse().map((item, index) => {
+						projectData.map((item, index) => {
 							return(
 								<ProjectComp key={index} className="scale-75 -mt-8 "  image={item.image} title={item.title} link={item.link} />
 							)
