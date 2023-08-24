@@ -18,19 +18,21 @@
     "clsx": "^1.2.1",
     "eslint": "8.46.0",
     "eslint-config-next": "13.4.12",
-    "framer-motion": "^10.15.1",
+    "file-saver": "^2.0.5",
+    "framer-motion": "^10.16.1",
     "next": "13.4.12",
     "postcss": "8.4.27",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-fast-marquee": "^1.6.0",
     "serve": "^14.2.1",
-    "sharp": "^0.32.4",
+    "sharp": "^0.32.5",
     "tailwindcss": "3.3.3",
     "typescript": "5.1.6"
   },
   "devDependencies": {
-    "prettier": "^3.0.1",
+    "@types/file-saver": "^2.0.5",
+    "prettier": "^3.0.2",
     "prettier-plugin-tailwindcss": "^0.4.1"
   }
 }
