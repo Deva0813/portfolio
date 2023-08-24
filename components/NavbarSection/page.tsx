@@ -68,7 +68,7 @@ export function NavbarSection() {
 					>
 						Contact
 					</button>
-					<a href={"/Devanand_Resume.pdf"} download className="px-2 py-1 text-white bg-blue-700 rounded-md scale-95 hover:scale-100 hover:bg-blue-600 hover:drop-shadow-md ">
+					<a href={"/Devanand_Resume.pdf"} download={"Devanand_Resume.pdf"} className="px-2 py-1 text-white bg-blue-700 rounded-md scale-95 hover:scale-100 hover:bg-blue-600 hover:drop-shadow-md ">
 						Resume
 					</a>
 				</div>
@@ -115,7 +115,7 @@ export function NavbarSection() {
 						</motion.h1>
 					</div>
 					<div className="flex flex-row  gap-4">
-						<a href={"/Devanand_Resume.pdf"} download className="px-2 py-1 text-white bg-blue-700 rounded-md scale-90 hover:bg-blue-600 hover:drop-shadow-md ">
+						<a href={"/Devanand_Resume.pdf"} download={"Devanand_Resume.pdf"} className="px-2 py-1 text-white bg-blue-700 rounded-md scale-90 hover:bg-blue-600 hover:drop-shadow-md ">
 							Resume
 						</a>
 						<button className="w-8 text-center" onClick={toggle}>
