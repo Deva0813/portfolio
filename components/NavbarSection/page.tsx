@@ -1,21 +1,10 @@
 "use client";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { saveAs } from "file-saver";
 
 export function NavbarSection() {
 	const [isOpen, setIsOpen] = useState(false);
 
-	const downloadResume = () => {
-		try {
-		  const resumePath ='/Devanand_Resume.pdf'; // Adjust the path as needed
-	
-		  // Use the FileSaver library to trigger the download
-		  saveAs(resumePath, 'Devanand_Resume.pdf');
-		} catch (error) {
-		  console.error('Error downloading resume:', error);
-		}
-	  };
 	
 	function toggle() {
 		setIsOpen(!isOpen);
@@ -79,9 +68,9 @@ export function NavbarSection() {
 					>
 						Contact
 					</button>
-					<button onClick={downloadResume} className="px-2 py-1 text-white bg-blue-700 rounded-md scale-95 hover:scale-100 hover:bg-blue-600 hover:drop-shadow-md ">
+					<a href={"/portfolio/Devanand_Resume.pdf"} download={"Devanand_Resume.pdf"} className="px-2 py-1 text-white bg-blue-700 rounded-md scale-95 hover:scale-100 hover:bg-blue-600 hover:drop-shadow-md ">
 						Resume
-					</button>
+					</a>
 				</div>
 			</div>
 
@@ -126,9 +115,9 @@ export function NavbarSection() {
 						</motion.h1>
 					</div>
 					<div className="flex flex-row  gap-4">
-						<button onClick={downloadResume} className="px-2 py-1 text-white bg-blue-700 rounded-md scale-90 hover:bg-blue-600 hover:drop-shadow-md ">
+						<a href={"/portfolio/Devanand_Resume.pdf"} download={"Devanand_Resume.pdf"} className="px-2 py-1 text-white bg-blue-700 rounded-md scale-90 hover:bg-blue-600 hover:drop-shadow-md ">
 							Resume
-						</button>
+						</a>
 						<button className="w-8 text-center" onClick={toggle}>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
