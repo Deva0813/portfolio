@@ -62,16 +62,15 @@ export function NavbarSection() {
 					>
 						Projects
 					</button>
-					{/* <button
+					<button
 						onClick={() => scrollToSection("ContactSection","desktop")}
 						className=" hover:text-black/70 hover:scale-105"
 					>
 						Contact
-					</button> */}
-					<button className="px-2 py-1 text-white bg-blue-700 rounded-md scale-95 hover:scale-100 hover:bg-blue-600 hover:drop-shadow-md " 
-					onClick={() => scrollToSection("ContactSection","desktop")}>
-						Contact
 					</button>
+					<a href={"/Devanand_Resume.pdf"} download className="px-2 py-1 text-white bg-blue-700 rounded-md scale-95 hover:scale-100 hover:bg-blue-600 hover:drop-shadow-md ">
+						Resume
+					</a>
 				</div>
 			</div>
 
@@ -116,9 +115,9 @@ export function NavbarSection() {
 						</motion.h1>
 					</div>
 					<div className="flex flex-row  gap-4">
-						<button className="px-2 py-1 text-white bg-blue-700 rounded-md scale-90 hover:bg-blue-600 hover:drop-shadow-md " onClick={() => scrollToSection("ContactSection")} >
-							Contact
-						</button>
+						<a href={"/Devanand_Resume.pdf"} download className="px-2 py-1 text-white bg-blue-700 rounded-md scale-90 hover:bg-blue-600 hover:drop-shadow-md ">
+							Resume
+						</a>
 						<button className="w-8 text-center" onClick={toggle}>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -169,12 +168,12 @@ export function NavbarSection() {
 					>
 						Projects
 					</button>
-					{/* <button
+					<button
 						onClick={() => scrollToSection("ContactSection")}
 						className=" hover:text-white hover:scale-105"
 					>
 						Contact
-					</button> */}
+					</button>
 				</motion.div>
 				<motion.div
 					initial={{ opacity: 0 }}
