@@ -46,7 +46,7 @@ export const TimelineCard = (props: Props) => {
 			style={{
 				opacity: opacityValue,
 				scale: scaleValue,
-				filter: filter,
+				// filter: filter,
 			}}
 			className=" flex p-10 items-center justify-center max-lg:hidden "
 		>
@@ -67,6 +67,7 @@ export const TimelineCard = (props: Props) => {
 								width={100}
 								height={100}
 								className=""
+								priority= {true}
 							/>
 						</div>
 						<div className="w-full pl-7 font-medium">
@@ -106,6 +107,7 @@ export const TimelineCardMobile = (props: Props) => {
 							width={50}
 							height={50}
 							className=""
+							priority= {true}
 						/>
 					</div>
 					<div className="pl-3">
