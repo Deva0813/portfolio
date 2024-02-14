@@ -3,6 +3,7 @@ import pic1 from "../../public/images/timeline/1.png";
 import pic2 from "../../public/images/timeline/2.png";
 import pic3 from "../../public/images/timeline/3.png";
 import pic4 from "../../public/images/timeline/4.png";
+import pic5 from "../../public/images/timeline/5.png";
 
 
 interface TimelineData {
@@ -52,11 +53,20 @@ const timelineData: TimelineData[] = [
 		year: "2022 - 2023",
 		name: "FULL STACK DEVELOPER INTERN",
 		location: "CHENNAI",
-		title: "Virtusa Consulting Services Pvt Ltd, Chennai - 125",
+		title: "Virtusa",
 		detail_1: "Digital Engineer Intern",
 		detail_2: "3 Months Experience",
 		image: pic4,
-	},
+	},{
+		id: "5",
+		year: "2023 - 2023",
+		name: "FULL STACK INTERN",
+		location: "REMOTE",
+		title: "Pixamentory",
+		detail_1: "Full stack Intern",
+		detail_2: "3 Months Experience",
+		image: pic5,
+	}
 ];
 
 export default timelineData;
